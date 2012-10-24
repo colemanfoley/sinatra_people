@@ -15,5 +15,6 @@ def list_people
 end
 
 def show_person
-  return IO.readlines("/people/coleman_foley.json")
+  json = IO.readlines("people/coleman_foley.json")
+  return JSON.parse json
 end
