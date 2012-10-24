@@ -1,7 +1,5 @@
 def list_people
-  person_array = []
-  Dir.foreach("people") {|person| person_array.push(person[0,-5])}
-  return person_array
+  return Dir.entries("people")
 end
 
 def show_person

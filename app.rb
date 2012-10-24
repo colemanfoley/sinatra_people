@@ -1,5 +1,6 @@
 require 'sinatra'
+require './methods.rb'
 
 get '/' do 
-  "Hello World"
+  erb :index
 end
